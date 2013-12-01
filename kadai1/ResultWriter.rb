@@ -23,6 +23,8 @@ class ResultWriter
 		end
 		textFile.close();
 		csvFile.close();
+		puts "Sampling Data (.txt) >> " + TEXT_FILE_NAME_1;
+		puts "Sampling Data (.csv) >> " + CSV_FILE_NAME_1;
 	end
 	# 量子化データをファイル2へ書き込み
 	def writeQuantizationData(data)
@@ -36,6 +38,8 @@ class ResultWriter
 		end
 		textFile.close();
 		csvFile.close();
+		puts "Quantization Data (.txt) >> " + TEXT_FILE_NAME_2;
+		puts "Quantization Data (.csv) >> " + CSV_FILE_NAME_2;
 	end
 	# 符号化データをファイル3へ書き込み
 	def writeEncodingData(data)
@@ -49,5 +53,7 @@ class ResultWriter
 		end
 		textFile.close();
 		csvFile.close();
+		puts "Encoding Data (.txt) >> " + TEXT_FILE_NAME_3;
+		puts "Encoding Data (.csv) >> " + CSV_FILE_NAME_3;
 	end
 end
