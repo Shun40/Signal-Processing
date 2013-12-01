@@ -1,0 +1,4 @@
+V Max [V]:5
+V Min [V]:-5
+V Amplitude [V]:10
+Wave Frequency [Hz]:10

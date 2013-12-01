@@ -1,0 +1,53 @@
+class ResultWriter
+	# 定数の定義
+	TEXT_FILE_NAME_1 = "./result/kadai1_SamplingData.txt";
+	TEXT_FILE_NAME_2 = "./result/kadai1_QuantizationData.txt";
+	TEXT_FILE_NAME_3 = "./result/kadai1_EncodingData.txt";
+	CSV_FILE_NAME_1 = "./result/kadai1_SamplingData.csv";
+	CSV_FILE_NAME_2 = "./result/kadai1_QuantizationData.csv";
+	CSV_FILE_NAME_3 = "./result/kadai1_EncodingData.csv";
+	OPEN_MODE = "w+:UTF-8";
+
+	def initialize()
+	end
+
+	# 標本化データをファイル1へ書き込み
+	def writeSamplingData(data)
+		textFile = File.open(TEXT_FILE_NAME_1, OPEN_MODE);
+		csvFile = File.open(CSV_FILE_NAME_1, OPEN_MODE);
+		for t in 0..data.length - 1 do
+			textLine = '[' + t.to_s() + ']' + "\t" + data[t].to_s() + "\n";
+			csvLine = '[' + t.to_s() + ']' + ',' + data[t].to_s() + "\n";
+			textFile.write(textLine);
+			csvFile.write(csvLine);
+		end
+		textFile.close();
+		csvFile.close();
+	end
+	# 量子化データをファイル2へ書き込み
+	def writeQuantizationData(data)
+		textFile = File.open(TEXT_FILE_NAME_2, OPEN_MODE);
+		csvFile = File.open(CSV_FILE_NAME_2, OPEN_MODE);
+		for t in 0..data.length - 1 do
+			textLine = '[' + t.to_s() + ']' + "\t" + data[t].to_s() + "\n";
+			csvLine = '[' + t.to_s() + ']' + ',' + data[t].to_s() + "\n";
+			textFile.write(textLine);
+			csvFile.write(csvLine);
+		end
+		textFile.close();
+		csvFile.close();
+	end
+	# 符号化データをファイル3へ書き込み
+	def writeEncodingData(data)
+		textFile = File.open(TEXT_FILE_NAME_3, OPEN_MODE);
+		csvFile = File.open(CSV_FILE_NAME_3, OPEN_MODE);
+		for t in 0..data.length - 1 do
+			textLine = '[' + t.to_s() + ']' + "\t" + data[t] + "\n";
+			csvLine = '[' + t.to_s() + ']' + ',' + data[t] + "\n";
+			textFile.write(textLine);
+			csvFile.write(csvLine);
+		end
+		textFile.close();
+		csvFile.close();
+	end
+end
