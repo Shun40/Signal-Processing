@@ -13,7 +13,7 @@ require './ResultWriter';
 # ファイルからsin波のデータを読み込み
 sinWaveParameterReader = SinWaveParameterReader.new();
 sinWaveParameterReader.readSinWaveParameter();
-# ファイルから標本化のパラメータを読み込み
+# ファイルからサンプリングのパラメータを読み込み
 samplingParameterReader = SamplingParameterReader.new();
 samplingParameterReader.readSamplingParameter();
 
