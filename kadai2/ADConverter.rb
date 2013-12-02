@@ -31,12 +31,12 @@ class ADConverter
 	end
 
 	# 量子化
-	def quantize(vMin, vAmplitude, samplingTime, samplingCycle, quantizationBit)
+	def quantize(vMax, vMin, vAmplitude, samplingTime, samplingCycle, quantizationBit)
 		n = calcSamplingCount(samplingTime, samplingCycle);
 		w = calcQuantizationWidth(vAmplitude, quantizationBit);
 		p = calcPower(2, quantizationBit);
-		qDataMin = -(p / 2);
 		qDataMax = (p / 2) - 1;
+		qDataMin = -(p / 2);
 		for t in 0..n-1 do
 			qData = qDataMin;
 			for wc in 0..p-1 do
@@ -45,8 +45,11 @@ class ADConverter
 				if isDataInRange(@samplingData[t], v1, v2) then
 					@quantizationData[t] = qData;
 					break;
-				elsif isQuantizeMax(qData, qDataMax) then
-					@quantizationData[t] = qData;
+				elsif isQuantizeMax(@samplingData[t], vMax, w) then
+					@quantizationData[t] = qDataMax;
+					break;
+				elsif isQuantizeMin(@samplingData[t], vMin) then
+					@quantizationData[t] = qDataMin;
 					break;
 				end
 				qData += 1;
@@ -62,8 +65,16 @@ class ADConverter
 		end
 	end
 	# 量子化上限値のチェック
-	def isQuantizeMax(qData, qDataMax)
-		if qData === qDataMax then
+	def isQuantizeMax(sData, sDataMax, w)
+		if sData >= sDataMax - w then
+			return true;
+		else
+			return false;
+		end
+	end
+	# 量子化下限値のチェック
+	def isQuantizeMin(sData, sDataMin)
+		if sData < sDataMin then
 			return true;
 		else
 			return false;

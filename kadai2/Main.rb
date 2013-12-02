@@ -54,7 +54,7 @@ noiseMax = whiteNoiseParameter.noiseMax;
 noiseMin = whiteNoiseParameter.noiseMin;
 adConverter = ADConverter.new();
 adConverter.sampling(vMax, waveFrequency, samplingTime, samplingCycle, noiseMax, noiseMin);
-adConverter.quantize(vMin, vAmplitude, samplingTime, samplingCycle, quantizationBit);
+adConverter.quantize(vMax, vMin, vAmplitude, samplingTime, samplingCycle, quantizationBit);
 adConverter.encoding(samplingTime, samplingCycle);
 
 # A/D変換の結果をファイルに書き込み
