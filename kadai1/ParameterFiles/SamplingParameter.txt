@@ -1,0 +1,3 @@
+Sampling Frequency :1000.0[Hz](f)
+Sampling Time :1.0[Hz](f)
+Quantization Bit :8[bit](i)
