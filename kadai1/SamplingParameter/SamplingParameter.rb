@@ -1,6 +1,6 @@
 class SamplingParameter
 	# 外部ファイル読み込み
-	require 'F:/5IKoukiMemory/SignalProcessing/Program/Kadai1/ADConverter/SamplingParameter/SamplingParameterReader.rb';
+	require 'F:/5IKoukiMemory/SignalProcessing/Program/Kadai1/SamplingParameter/SamplingParameterReader.rb';
 
 	# コンストラクタ
 	def initialize()

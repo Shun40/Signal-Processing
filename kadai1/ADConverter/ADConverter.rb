@@ -1,11 +1,11 @@
 class ADConverter
 	# 外部ファイル読み込み
 	require 'F:/5IKoukiMemory/SignalProcessing/Program/Kadai1/ADConverter/ADConverterDisplay.rb';
-	require 'F:/5IKoukiMemory/SignalProcessing/Program/Kadai1/ADConverter/FunctionGenerator/FunctionGenerator.rb';
-	require 'F:/5IKoukiMemory/SignalProcessing/Program/Kadai1/ADConverter/SamplingParameter/SamplingParameter.rb';
-	require 'F:/5IKoukiMemory/SignalProcessing/Program/Kadai1/ADConverter/ADConverterDevice/SamplingDevice.rb';
-	require 'F:/5IKoukiMemory/SignalProcessing/Program/Kadai1/ADConverter/ADConverterDevice/QuantizationDevice.rb';
-	require 'F:/5IKoukiMemory/SignalProcessing/Program/Kadai1/ADConverter/ADConverterDevice/EncodingDevice.rb';
+	require 'F:/5IKoukiMemory/SignalProcessing/Program/Kadai1/FunctionGenerator/FunctionGenerator.rb';
+	require 'F:/5IKoukiMemory/SignalProcessing/Program/Kadai1/SamplingParameter/SamplingParameter.rb';
+	require 'F:/5IKoukiMemory/SignalProcessing/Program/Kadai1/ADConverterDevice/SamplingDevice.rb';
+	require 'F:/5IKoukiMemory/SignalProcessing/Program/Kadai1/ADConverterDevice/QuantizationDevice.rb';
+	require 'F:/5IKoukiMemory/SignalProcessing/Program/Kadai1/ADConverterDevice/EncodingDevice.rb';
 	# 必要なモジュールの読み込み
 	require 'F:/5IKoukiMemory/SignalProcessing/Program/Kadai1/CalcModule.rb';
 	require 'F:/5IKoukiMemory/SignalProcessing/Program/Kadai1/ADConverter/ADConverterCalcModule.rb';

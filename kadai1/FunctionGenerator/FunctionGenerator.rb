@@ -1,9 +1,9 @@
 class FunctionGenerator
 	# 外部ファイル読み込み
-	require 'F:/5IKoukiMemory/SignalProcessing/Program/Kadai1/ADConverter/FunctionGenerator/FunctionGeneratorDisplay.rb';
-	require 'F:/5IKoukiMemory/SignalProcessing/Program/Kadai1/ADConverter/FunctionGenerator/SinWave/SinWaveParameter.rb';
+	require 'F:/5IKoukiMemory/SignalProcessing/Program/Kadai1/FunctionGenerator/FunctionGeneratorDisplay.rb';
+	require 'F:/5IKoukiMemory/SignalProcessing/Program/Kadai1/SinWave/SinWaveParameter.rb';
 	# 必要なモジュールの読み込み
-	require 'F:/5IKoukiMemory/SignalProcessing/Program/Kadai1/ADConverter/FunctionGenerator/FunctionGeneratorCalcModule.rb';
+	require 'F:/5IKoukiMemory/SignalProcessing/Program/Kadai1/FunctionGenerator/FunctionGeneratorCalcModule.rb';
 	include FunctionGeneratorCalcModule;
 
 	# コンストラクタ

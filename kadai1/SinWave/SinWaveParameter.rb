@@ -1,6 +1,6 @@
 class SinWaveParameter
 	# 外部ファイル読み込み
-	require 'F:/5IKoukiMemory/SignalProcessing/Program/Kadai1/ADConverter/FunctionGenerator/SinWave/SinWaveParameterReader.rb';
+	require 'F:/5IKoukiMemory/SignalProcessing/Program/Kadai1/SinWave/SinWaveParameterReader.rb';
 
 	# コンストラクタ
 	def initialize()
