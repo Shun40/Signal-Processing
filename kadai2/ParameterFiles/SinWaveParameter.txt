@@ -1,0 +1,4 @@
+V Max :5.0[V](f)
+V Min :-5.0[V](f)
+V Amplitude :10.0[V](f)
+Wave Frequency :10.0[Hz](f)

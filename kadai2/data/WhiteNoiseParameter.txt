@@ -1,3 +1,0 @@
-Noise Max [V]:0.5
-Noise Min [V]:-0.5
-Noise Amplitude [V]:1
