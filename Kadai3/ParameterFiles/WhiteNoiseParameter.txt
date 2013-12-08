@@ -1,0 +1,3 @@
+Noise Max :1.0[V](f)
+Noise Min :-1.0[V](f)
+Noise Amplitude :2.0[V](f)
